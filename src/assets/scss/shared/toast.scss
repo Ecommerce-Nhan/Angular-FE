@@ -1,0 +1,82 @@
+/*=========================== TOATS ==============================*/
+
+#toast {
+    position: fixed;
+    top: 50px;
+    right: 65px;
+    display: block;
+    z-index: 3;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    border-left: 4px solid;
+    min-width: 400px;
+    max-width: 450px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.8);
+    animation: slideInLeft ease 1s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 65px));
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toast + .toast {
+    margin-top: 24px;
+}
+
+.toast-close,
+.toast-icon {
+    padding: 0 16px;
+}
+
+.toast-icon--success {
+    color: #47d864;
+}
+
+.toast-icon--failed {
+    color: red;
+}
+
+.toast-body {
+    flex-grow: 1;
+}
+
+.toast-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast_msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+    line-height: 1.6;
+}
+
+.toast-close {
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--failed {
+    border-color: red;
+}
