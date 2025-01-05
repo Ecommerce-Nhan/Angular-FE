@@ -1,0 +1,1 @@
+export const ENV_CONFIG_TOKEN = 'ENV_CONFIG_TOKEN';
