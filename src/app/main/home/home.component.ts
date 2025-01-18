@@ -1,6 +1,6 @@
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
