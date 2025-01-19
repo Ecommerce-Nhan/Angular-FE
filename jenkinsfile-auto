@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
-            steps {
-                cleanWs()
-                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/nhanne/Ecommerce-Angular.git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         cleanWs()
+        //         git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/nhanne/Ecommerce-Angular.git'
+        //     }
+        // }
         // stage('Clear workspace') {
         //     steps {
         //         sh 'rm -rf ${WORKSPACE}/dist'
